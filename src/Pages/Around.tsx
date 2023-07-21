@@ -1,59 +1,84 @@
-import React from 'react'
-import styled from 'styled-components'
-import relocation from '../Assets/relocations.jpg'
+import React from "react";
+import styled from "styled-components";
 
-const Around = () => {
+interface iCard {
+  text?: any;
+  subText?: string;
+  img?: any;
+  reverse?: string;
+}
+const Around: React.FC<iCard> = ({ text, subText, img, reverse }) => {
   return (
     <div>
-        <Container>
-            <Main>
-                <Left>
-                  <Box>
-                     <Img src={relocation} />
-                  </Box>
-                </Left>
-                <Right>
-                    <BText></BText>
-                    <SubText></SubText>
-                </Right>
-            </Main>
-        </Container>
+      <Container>
+        <Wrapper rr={reverse}>
+          <Main src={img} />
+          <Content>
+            <BigText>{text}</BigText>
+
+            <SubText>{subText}</SubText>
+
+            
+            <Button>Contact Us</Button>
+          </Content>
+        </Wrapper>
+      </Container>
     </div>
-  )
-}
+  );
+};
 
-export default Around
+export default Around;
 
-const Img = styled.img`
-   width: 200px;
-   height: 200px;
-   border-radius: 10px;
-   object-fit: cover;
-   overflow: hidden
-`
-const SubText = styled.div``
-const BText = styled.div``
-const Box = styled.div`
-    width: 400px;
-    height: 200px;
-`
-const Right = styled.div``
-const Left = styled.div`
-
-`
-const Main = styled.div`
+const Button = styled.div`
+  width: 100px;
+  height: 35px;
+  background-color: dodgerblue;
+  border-radius: 30px;
+  color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+`;
+const Content = styled.div`
+  width: 50%;
   height: 100%;
-  width:90%;
-  background-color: teal;
-`
-const Container = styled.div`
+  font-family: sans-serif, Geneva, Tahoma;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+`;
+const SubText = styled.div`
+   margin-bottom: 20px;
+`;
+const BigText = styled.div`
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+  span {
+    color: dodgerblue;
+    text-transform: capitalize;
+  }
+`;
+
+const Main = styled.img`
+  width: 45%;
+  height: 100%;
+  border-radius: 20px;
+`;
+
+const Wrapper = styled.div<{ rr?: string }>`
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 80%;
+  margin-top: 30px;
+  flex-direction: ${({ rr }) => (rr ? "row-reverse" : "row")};
+`;
+
+const Container = styled.div`
   width: 100%;
-  height: 400px;
-  background-color: lightgray;
-`
+  /* background-color: lime; */
+  display: flex;
+  justify-content: center;
+`;

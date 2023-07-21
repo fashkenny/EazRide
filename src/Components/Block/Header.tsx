@@ -112,7 +112,6 @@ const Container = styled.div`
   height: 70px;
   position: relative;
  
- 
 `;
 
 
