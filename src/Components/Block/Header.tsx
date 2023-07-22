@@ -19,11 +19,15 @@ const Header = () => {
                 <Navs to="Contact">Contact Us</Navs>
               </Navigations>
               <Auth>
-                  <Button1>Log in</Button1>
-                  <Button2>Sign Up</Button2>         
+           
+                  <Button1 to="/login">Log In</Button1>
+              
+                
+                  <Button2 to="/signup">Sign Up</Button2>
+               
               </Auth>
             </Holder>
-          </NavHolder>       
+          </NavHolder>
         </Main>
       </Container>
     </div>
@@ -31,11 +35,7 @@ const Header = () => {
 };
 export default Header;
 
-// const AuthBtn = styled.div`
-//   text-decoration: none;
-//   display: flex;
-// `;
-const Button2 = styled.button`
+const Button2 = styled(NavLink)`
   text-decoration: none;
   color: white;
   background-color: #298bed;
@@ -48,8 +48,9 @@ const Button2 = styled.button`
   align-items: center;
   border: 1px solid silver;
   outline: none;
+  cursor: pointer;
 `;
-const Button1 = styled.button`
+const Button1 = styled(NavLink)`
   text-decoration: none;
   color: dodgerblue;
   font-weight: bold;
@@ -63,6 +64,7 @@ const Button1 = styled.button`
   border: 1px solid dodgerblue;
   outline: none;
   margin-right: 10px;
+  cursor: pointer;
 `;
 
 const Auth = styled.div`
@@ -77,11 +79,11 @@ const Navs = styled(NavLink)`
 `;
 const Navigations = styled.div`
   display: flex;
- 
+
   margin-right: 10px;
 `;
 const Logo = styled.div`
-    color:#fff;
+  color: #fff;
 `;
 const Holder = styled.div`
   height: 70px;
@@ -110,34 +112,8 @@ const Container = styled.div`
   justify-content: center;
   width: 100%;
   height: 70px;
-  position: relative;
- 
+  position: fixed;
 `;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const Icon3 = styled(MdOutlinePeopleAlt)``
 // const Guest = styled.div``;

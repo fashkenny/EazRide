@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Around from "../../Pages/Around";
-import pic from "../../Assets/relocations.jpg";
-import img from "../../Assets/pexels.jpg";
+// import pic from "../../Assets/relocations.jpg";
+// import img from "../../Assets/pexels.jpg";
 import black from '../../Assets/black.webp'
 import loading from '../../Assets/loading.jpg'
 import move from '../../Assets/move.jpg'
@@ -22,7 +22,7 @@ const GlobalCard = () => {
         />
          <Around
           reverse="y"
-          img={black}
+          img={move}
           text={
             <div>
               Trust us with <span>swift</span> deliverty
@@ -31,7 +31,7 @@ const GlobalCard = () => {
           subText="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore blanditiis praesentium vitae et ducimus, rerum aperiam expedita illo excepturi assumenda corporis deleniti, sed molestiae corrupti aliquid consequatur, cum dignissimos dicta?"
         />
          <Around
-          img={black}
+          img={loading}
           text={
             <div>
               Trust us with <span>swift</span> deliverty

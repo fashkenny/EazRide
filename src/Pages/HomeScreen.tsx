@@ -1,8 +1,10 @@
 import React from 'react'
-import Around from './Around'
-import Heropage from '../Components/Block/Heropage'
+import Heropage from './Heropage'
 import GlobalCard from '../Components/Static/GlobalCard'
 import Services from './Services'
+import Best from './Best'
+// import LogIn from './LogIn'
+// import SignUp from './SignUp'
 
 const HomeScreen = () => {
   return (
@@ -10,6 +12,9 @@ const HomeScreen = () => {
       <Heropage/>
       <GlobalCard/>
       <Services/>
+      <Best/>
+      {/* <SignUp/>
+      <LogIn/> */}
     </div>
   )
 }

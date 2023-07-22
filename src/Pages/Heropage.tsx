@@ -1,13 +1,13 @@
 import styled from "styled-components";
 // import relocate from "../../Assets/relocations.jpg";
-import pexels from "../../Assets/pexels.jpg"
-import Header from "./Header";
+import pexels from "../Assets/pexels.jpg"
+// import Header from "./Header";
 
 const Heropage = () => {
   return (
     <div>
       <Container>
-        <Header/>
+        {/* <Header/> */}
         <Main>
           <Content>
             <Text>
@@ -58,7 +58,8 @@ const Title = styled.div`
   font-size: 55px;
   font-weight: 700;
   margin-top: 40px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: Poppins;
 `;
 
 const SubText = styled.div`
@@ -83,7 +84,7 @@ const Main = styled.div`
   background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 450px;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   
 `;
