@@ -7,6 +7,8 @@ import LogIn from "../Pages/LogIn";
 import About from "../Pages/About";
 import Services from "../Pages/Services";
 import Contact from "../Pages/Contact";
+import Landing from "../Pages/Landing";
+import HomePage from "../Pages/HomePage";
 
 export const route = createBrowserRouter([
    {
@@ -17,6 +19,16 @@ export const route = createBrowserRouter([
             index: true,
             element: <HomeScreen/>
             
+         },
+         {
+           
+            path: '/1s',
+            element: <Landing/>
+         },
+         {
+           
+            path: '/',
+            element: <HomePage/>
          },
 
          {

@@ -58,8 +58,8 @@ const Title = styled.div`
   font-size: 55px;
   font-weight: 700;
   margin-top: 40px;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   font-family: Poppins;
+  word-spacing: 10px;
 `;
 
 const SubText = styled.div`
@@ -67,21 +67,22 @@ const SubText = styled.div`
   text-align: center;
   margin-top: 15px;
 `;
-const Text = styled.div``;
+const Text = styled.div`
+
+`;
 
 const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
   height: 500px;
   width: 100%;
   flex-direction: column;
-  /* margin-top:45px; */
+ 
 `;
 
 const Main = styled.div`
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 450px;
   /* position: absolute; */

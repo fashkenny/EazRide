@@ -3,6 +3,7 @@ import Heropage from './Heropage'
 import GlobalCard from '../Components/Static/GlobalCard'
 import Services from './Services'
 import Best from './Best'
+// import HomePage from './HomePage'
 // import LogIn from './LogIn'
 // import SignUp from './SignUp'
 
@@ -13,8 +14,9 @@ const HomeScreen = () => {
       <GlobalCard/>
       <Services/>
       <Best/>
-      {/* <SignUp/>
-      <LogIn/> */}
+      {/* <HomePage/> */}
+       {/* <SignUp/> */}
+      {/* <LogIn/>  */}
     </div>
   )
 }

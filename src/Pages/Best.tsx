@@ -1,75 +1,39 @@
-import React from "react";
-import styled from "styled-components";
-import truck2 from "../Assets/truck2.avif";
+import React from 'react'
+import Card1 from '../Components/Reuse/Card'
+import truck2 from "../Assets/truck.webp";
+import styled from 'styled-components';
 
 const Best = () => {
   return (
-    <div>
-      \
-      <Container>
-        <Main>
-          <TextHolder>
-            <Text>Our best available truck</Text>
-          </TextHolder>
+    <Container>
+      <Main>
+        <Card1 title='Ahio' price='$200.00' IMG={truck2}/>
+        <Card1 title='Selac' price='$200.00' IMG={truck2}/>
+        <Card1 title='richard' price='$200.00' IMG={truck2}/>
+        <Card1 title='austine' price='$200.00' IMG={truck2}/>
+        <Card1 title='williams' price='$200.00' IMG={truck2}/>
+        <Card1 title='akin' price='$200.00' IMG={truck2}/>
+        <Card1 title='destiny' price='$200.00' IMG={truck2}/>
+        <Card1 title='logic' price='$200.00' IMG={truck2}/>
+        {/* <Card1 title='wisdom' price='$200.00' IMG={truck2}/> */}
+      </Main>
+    </Container>
+  )
+}
 
-          <Card>
-            <Box>
-                <Img src={truck2} />
-                </Box>
-            <TextHold>
-              <Title>Aicel</Title>
-              <Price>₦45,000</Price>
-            </TextHold>
-          </Card>
-        </Main>
-      </Container>
-    </div>
-  );
-};
+export default Best
 
-export default Best;
-
-const Price = styled.div``;
-const Title = styled.div``;
-const TextHold = styled.div``;
-const Img = styled.img`
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: 5px;
-/* margin:10px 10px; */
-/* margin-top:10px; */
-`;
-const Box = styled.div`
-  background-color: #ffff;
-  width: 300px;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-
- 
-  
-`;
-const Card = styled.div`
-   width: 300px;
-   height: 300px;
-   border-radius: 10px;
-   box-shadow: 0px 0px 10px 5px lightgray;
-   overflow: hidden;
-   padding: 5px 5px;
-
-`;
-const Text = styled.div``;
-const TextHolder = styled.div``;
 const Main = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-`;
+width: 90%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+`
+
 const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-`;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+`

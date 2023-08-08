@@ -78,7 +78,6 @@ const Wrapper = styled.div<{ rr?: string }>`
 
 const Container = styled.div`
   width: 100%;
-  /* background-color: lime; */
   display: flex;
   justify-content: center;
 `;
